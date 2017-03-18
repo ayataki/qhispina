@@ -8,7 +8,7 @@ def index(request):
     return render(request, "pet/index.html")
 
 
-def pet_view(request):
+def pet_create(request):
     if request.method == 'POST':
         form = PetForm(request.POST)
         if form.is_valid():
@@ -17,4 +17,4 @@ def pet_view(request):
     else:
         form = PetForm()
 
-    return render(request, 'pet/pet_form.html', {'form': form})
+    return render(request, 'pet/pet_create.html', {'form': form})

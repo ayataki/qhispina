@@ -29,7 +29,7 @@ class PetForm (forms.ModelForm):
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'genre': forms.TextInput(attrs={'class': 'form-control'}),
             'age_aprox': forms.TextInput(attrs={'class': 'form-control'}),
-            'date_in': forms.TextInput(attrs={'class': 'form-control'}),
+            'date_in': forms.DateInput(attrs={'class': 'form-control'}),
             'person': forms.Select(attrs={'class': 'form-control'}),
             'vaccine': forms.CheckboxSelectMultiple(),
         }
